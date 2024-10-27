@@ -1,0 +1,127 @@
+/* Agrega Estilos a todo html*/
+
+* {
+    margin: 5px;
+    padding: 0;
+    
+}
+
+body {
+    background: linear-gradient(to bottom, #232526, #414345);
+    color: #fff;
+    height: 1000px;
+    background-image: url(cityscape_synthwave_moon_buildings_4k_hd_vaporwave-2560x1440.jpg);
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+/* Agrega Estilos a la Introducción */
+
+
+h1{
+    text-align: center;
+}
+
+header  {
+    font-size: 20px;
+}
+
+/* Agrega Estilos al Formulario */
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 80px;
+    padding-left: 200px;
+}
+
+.formulario__label {
+    display: block;
+    padding: 10px 0;
+}
+
+/* Agrega Estilos a la casilla de unidades a convertir */
+
+.formulario__input {
+    width: 90%;
+    background: transparent;
+    border-bottom: 2px solid #00ffd5;
+    border-right: none;
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+    line-height: 45px;
+    transition: all 1s;
+    border-radius: 20px;
+}
+
+.pregunta{
+    background: #353535;
+    border-radius: 20px;
+    width: 300px;
+}
+
+#input_pregunta {
+    width: 110px;
+}
+
+/* Agrega Estilos a la casilla de unidades ya convertidas */
+
+.formulario_output {
+    width: 90%;
+    background: transparent;
+    border-bottom: 2px solid #00ffd5;
+    border-right: none;
+    color: #fff;
+    font-size: 17px;
+    outline: none;
+    line-height: 45px;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.respuesta{
+    background: #353535;
+    border-radius: 20px;
+    width: 300px;
+}
+
+#grupo__presentaciones2 {
+    width: 200px;
+}
+
+
+#grupo__resultado1 {
+    width: 250px;
+}
+
+.formulario__input:focus {
+    box-shadow: 0 0 5px #00e1ff;
+}
+
+/* Agrega Estilos a los botones */
+
+.formulario__grupo-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.formulario__btn {
+    padding: 15px 35px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.formulario__btn:hover {
+    background: #00ffd5;
+    transition: 1s;
+    color: #000;
+}

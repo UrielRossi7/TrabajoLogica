@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css">
+    <script src="scripttrabajo.js"></script>
+    <title>Conversor</title>
+</head>
+<body>
+
+    <!-- Introducción -->
+
+<header>
+    <h1>Conversor de Unidades</h1>
+    <p>Utilice este conversor para pasar de:</p> <br> - Fahrenheit a Celcius <br> - Libra a Kilo <br> 
+    - Pulgada a Centímetro <br> - Milla por hora a Kilómetro por hora 
+    <br> <br> Coloque 0 (cero) en las casillas dónde no quiera convertir las unidades.
+</header>
+
+<form action="#" class="formulario" id="formulario">
+
+<!-- Formulario para ingresar las unidades a convertir -->
+    <div class="pregunta">
+        <div class="formulario__grupo" id="grupo__presentaciones2">
+        <label class="formulario__label">Pulgada a Centímetro</label>
+        <div class="formulario__grupo-input" id="input_pregunta">
+            <input type="text" class="formulario__input" name="pulgada" id="pulgada" >
+        </div>
+
+        </div>
+        <div class="formulario__grupo" id="grupo__presentaciones2">
+            <label class="formulario__label">Libra a Kilo</label>
+            <div class="formulario__grupo-input" id="input_pregunta">
+                <input type="text" class="formulario__input" name="libra" id="libra" >
+            </div>
+
+            
+        </div>
+        <div class="formulario__grupo" id="grupo__presentaciones2">
+            <label class="formulario__label">Fahrenheit a Celcius</label>
+            <div class="formulario__grupo-input" id="input_pregunta">
+                <input type="text" class="formulario__input" name="fahrenheit" id="fahrenheit">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            
+        </div>
+
+        <div class="formulario__grupo" id="grupo__presentaciones2">
+            <label class="formulario__label">Milla por hora a Kilómetro por hora</label>
+            <div class="formulario__grupo-input" id="input_pregunta">
+                <input type="text" class="formulario__input" name="milla" id="milla" >
+            </div>
+        </div>
+    </div>
+
+    <!-- Grupo de botones de Enviar - Limpiar -->
+
+            <div class="formulario__grupo-botones">
+                <input class="formulario__btn" type="button" value="Enviar" onclick="calcular_unidades(this.form)">
+                <input class="formulario__btn" type="reset" value="Limpiar">
+            </div>
+
+
+<!-- Casillas donde devuelve el resultado de las unidades ya convertidas -->
+
+<div class="respuesta">            
+    <div class="formulario__grupo" id="grupo__resultado1">
+    <label class="formulario__label">Convertido a Centímetros:</label>
+
+</div>
+<div class="formulario__grupo" id="grupo__resultado1">
+    <input type="text" class="formulario_output" name="tot_cm" id="tot_cm">
+    
+</div>
+
+<div class="formulario__grupo" id="grupo__resultado1">
+    <label class="formulario__label">Convertido a Kilogramos:</label>
+
+</div>
+<div class="formulario__grupo" id="grupo__resultado1">
+    <input type="text" class="formulario_output" name="tot_kg" id="tot_kg">
+    
+</div>
+
+<div class="formulario__grupo" id="grupo__resultado1">
+    <label class="formulario__label">Convertido a Celsius:</label>
+
+</div>
+<div class="formulario__grupo" id="grupo__resultado1">
+    <input type="text" class="formulario_output" name="tot_cel" id="tot_cel">
+    
+</div>
+
+<div class="formulario__grupo" id="grupo__resultado1">
+    <label class="formulario__label">Convertido a Kilómetro:</label>
+
+</div>
+<div class="formulario__grupo" id="grupo__resultado1">
+    <input type="text" class="formulario_output" name="tot_km" id="tot_km">
+    
+</div>
+</div>
+
+
+
+</form>
+
+
+</body>
+</html>
